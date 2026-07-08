@@ -140,18 +140,19 @@
     .video-wrap {
       position: relative;
       width: 100%;
-      aspect-ratio: 16 / 9;
       overflow: hidden;
       border-radius: 18px;
       background: #efe4d8;
+      padding-top:56.25%;
     }
 
     .video-wrap iframe {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      border:0;
     }
 
     .ending {
@@ -195,6 +196,17 @@
     }
 
     @media (max-width: 640px) {
+
+      .video-card{
+        padding:8px;
+        margin:20px auto 28px;
+      }
+
+      .video-wrap{
+        border-radius:12px;
+        padding-top:70%;
+      }
+
       .page {
         padding: 34px 14px 34px;
       }
