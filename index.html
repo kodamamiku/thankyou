@@ -129,31 +129,28 @@
     }
 
     .video-card {
-      width: min(92%, 860px);
-      margin: 22px auto 34px;
+      width: min(96%, 900px);
+      margin: 28px auto 38px;
       padding: clamp(10px, 2vw, 16px);
-      border-radius: 30px;
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.92), rgba(255,248,240,0.78));
-      box-shadow:
-        0 18px 40px rgba(76, 56, 43, 0.14),
-        0 2px 0 rgba(255,255,255,0.9) inset;
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.78);
+      box-shadow: 0 16px 38px var(--shadow);
       backdrop-filter: blur(8px);
       animation: fadeUp 1s ease 0.2s both;
     }
 
     .video-frame {
       padding: 8px;
-      border-radius: 24px;
-      background: rgba(255,255,255,0.92);
-      box-shadow: 0 10px 26px rgba(76, 56, 43, 0.08);
+      border-radius: 22px;
+      background: rgba(255,255,255,0.94);
+      box-shadow: 0 8px 22px rgba(76, 56, 43, 0.08);
     }
 
     .video-wrap {
       position: relative;
       width: 100%;
       overflow: hidden;
-      border-radius: 18px;
+      border-radius: 16px;
       background: #efe4d8;
       padding-top: 56.25%;
     }
@@ -208,66 +205,30 @@
     }
 
     @media (max-width: 640px) {
-
-      .video-card{
-        padding:8px;
-        margin:20px auto 28px;
-      }
-
-      .video-wrap{
-        border-radius:12px;
-        padding-top:70%;
-      }
-
       .page {
-        padding: 34px 14px 34px;
+        padding: 28px 14px 34px;
       }
 
       .hero {
-        padding-top: 24px;
-      }
-
-      .sub-eyebrow {
-        margin-bottom: 24px;
-      }
-
-      .names {
-        letter-spacing: 0.02em;
-      }
-
-      .video-card {
-        border-radius: 20px;
-      }
-
-      .video-wrap {
-        border-radius: 14px;
-      }
-    }
-      @media (max-width: 640px) {
-      .page {
-        padding: 26px 12px 30px;
-      }
-
-      .hero {
-        padding: 16px 10px 8px;
+        padding: 18px 10px 8px;
       }
 
       .eyebrow {
         font-size: 42px;
-        margin-bottom: 4px;
+        margin-bottom: 6px;
       }
 
       .sub-eyebrow {
-        font-size: 15px;
-        margin-bottom: 22px;
-        letter-spacing: 0.14em;
+        font-size: 17px;
+        margin-bottom: 34px;
+        letter-spacing: 0.10em;
       }
 
       .names {
-        font-size: clamp(28px, 8.2vw, 34px);
-        line-height: 1.42;
+        font-size: clamp(26px, 7.4vw, 31px);
+        line-height: 1.52;
         letter-spacing: 0.02em;
-        margin-bottom: 18px;
+        margin-bottom: 22px;
       }
 
       .lead {
@@ -276,15 +237,14 @@
       }
 
       .divider {
-        margin: 22px auto 22px;
+        margin: 24px auto 22px;
       }
 
       .video-card {
-        width: min(94%, 420px);
-        padding: 7px;
+        width: min(94%, 430px);
+        padding: 8px;
         margin: 18px auto 30px;
         border-radius: 24px;
-        box-shadow: 0 14px 30px rgba(76, 56, 43, 0.13);
       }
 
       .video-frame {
@@ -293,17 +253,22 @@
       }
 
       .video-wrap {
-        border-radius: 16px;
-        padding-top: 62%;
+        border-radius: 15px;
+        padding-top: 56.25%;
       }
 
       .ending {
         padding: 0 8px;
+        margin-top: -4px;
       }
 
       .ending p {
         font-size: 17px;
-        line-height: 1.9;
+        line-height: 1.85;
+      }
+
+      .signature {
+        margin-top: 18px;
       }
     }
   </style>
@@ -322,8 +287,8 @@
 <h1 class="eyebrow">Thank You</h1>
 <p class="sub-eyebrow">For Everything</p>
 <h2 class="names">
-        杉本さん・野村さん<br/>
-        今まで本当に<br/>
+        杉本さん・野村さん<br>
+        今まで本当に<br>
         ありがとうございました
       </h2>
 <p class="lead">
@@ -332,7 +297,20 @@
       </p>
 </section>
 <div class="divider"></div>
-<section class="video-card"><p style="margin:0 0 18px;font-size:18px;line-height:1.8;color:#5f4738;">下のボタンから動画をご覧いただけます。</p><a href="https://drive.google.com/file/d/1lgvNQzj1Y9mCx3or8E8uK7EWvCgMM2XH/view?usp=sharing" style="display:inline-block;padding:18px 34px;border-radius:999px;background:linear-gradient(180deg,#c9a26b,#b58a55);color:#fff;text-decoration:none;font-weight:700;font-size:20px;box-shadow:0 10px 24px rgba(0,0,0,.15);" target="_blank">💌 みんなからのメッセージを見る</a><p style="margin-top:18px;font-size:14px;color:#8f6d52;line-height:1.8;">※スマートフォンでは横画面でご覧いただくと、より見やすくお楽しみいただけます。</p></section>
+<section class="video-card" aria-label="メッセージ動画">
+      <div class="video-frame">
+        <div class="video-wrap">
+          <iframe
+            src="https://player.vimeo.com/video/1207984305?h=e5ab58cf0c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            title="最終稿mp4"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
 <section class="ending">
 <p>
         お二人の新しい門出が<br/>
@@ -342,5 +320,6 @@
 <div class="flower">🌸</div>
 </section>
 </main>
+  <script src="https://player.vimeo.com/api/player.js"></script>
 </body>
 </html>
